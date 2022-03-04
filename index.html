@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>photo Finder </title>
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+ <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+</head>
+<body>
+
+<section>
+ <h1>😍 Search your photo by your name 🥰 😘</h1>
+ <h2>If you like it, then try to find a girlfriend for me too ,</br> 😎 18+ have turned 😅, how long will we be single 😣 😖 &nbsp;thank you. 😂 🤣</h2>
+ <div class="centerDiv">
+  <div class="details">
+   <label>ENTER YOUR NAME</label><br>
+   <input type="text" name="" id="nameid">
+  </div>
+
+  <div class="imgdiv">
+   <img src="./css/img.jpg" width="200" height="200" class="imgchange">
+  </div>
+
+  <button> Click Me</button>
+  
+ </div>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+  $('button').click(function(){
+   const name = $('#nameid').val();
+   $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+   const b = $('.imgchange');
+   console.log(b);
+
+  });
+ });
+</script>
+
+</body>
+</html>
